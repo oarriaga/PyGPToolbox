@@ -6,6 +6,7 @@ This is a toolbox of python functions for geometry processing. This toolbox cont
 For example,
 
 _import sys_
+
 _sys.path.append('/path/to/PyGPToolbox')_
 
 To import desired functions, simply import the script such as
