@@ -1,3 +1,7 @@
+## Inputs:
+## V: n-by-3 numpy ndarray of vertex positions
+## F: n-by-3 numpy ndarray of face indices
+
 import numpy as np
 import scipy
 import scipy.sparse as sparse
