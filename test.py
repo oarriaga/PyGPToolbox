@@ -24,6 +24,4 @@ A = adjacencyMat(F)
 # mlab.triangular_mesh(V[:,0], V[:,1], V[:,2], F)
 # mlab.show()
 
-C = np.zeros([F.shape[0], 1])
-C[1] = 1
-plotTriMesh(V,F, faceColor = C, opacity=0.1)
+plotTriMesh(V,F, faceColor = VA, opacity=0.7)
