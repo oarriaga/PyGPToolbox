@@ -12,5 +12,7 @@ The dependencies of this toolbox are standard and easy to be installed using pac
 - numpy<br />
 - scipy<br />
 - mayavi<br />
+- matplotlib<br />
+
 
 
