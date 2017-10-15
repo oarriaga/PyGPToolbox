@@ -5,7 +5,7 @@ This is a toolbox of python functions for geometry processing. This toolbox cont
 _import sys_ <br />
 _sys.path.append('/path/to/PyGPToolbox')_<br /><br />
 
-To import desired functions, simply import the desired functions such as<br /><br />
+To import desired functions, simply do <br /><br />
 _from readOBJ import *_<br /><br />
 
 The dependencies of this library are very common and they can be installed easily using installation tool such as _pip_<br />
