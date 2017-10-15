@@ -8,7 +8,7 @@ _sys.path.append('/path/to/PyGPToolbox')_<br /><br />
 To import desired functions, simply do <br /><br />
 _from readOBJ import *_<br /><br />
 
-The dependencies of this library are very common and they can be installed easily using installation tool such as _pip_<br />
+The dependencies of this toolbox are standard and easy to be installed using package manager such as _pip_<br />
 - numpy<br />
 - scipy<br />
 - mayavi<br />
