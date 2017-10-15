@@ -12,8 +12,6 @@ VA = vertArea(V, F)
 L = cotanLaplace(V,F)
 
 massMat = scipy.sparse.coo_matrix(np.diag(VA)).tocsr()
-vals, vecs = scipy.sparse.linalg.eigs(L, M=massMat, k=10, which='SM')
-vals = np.real(vals)
-vecs = np.real(vecs)
+vals, vecs = scipy.sparse.linalg.eigsh(L, M=massMat, k=5, which='SM')
 
-plotTriMesh(V,F, vertexColor = vecs[:,0])
+plotTriMesh(V,F, vertexColor = vecs[:,1]) 
