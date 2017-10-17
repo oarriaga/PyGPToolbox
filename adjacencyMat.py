@@ -1,5 +1,5 @@
 ## Inputs:
-## F: n-by-3 numpy ndarray of face indices
+## F: m-by-3 numpy ndarray of face indices
 
 import numpy as np
 import scipy

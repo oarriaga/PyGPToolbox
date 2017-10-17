@@ -4,12 +4,12 @@ import scipy.sparse.linalg
 import time
 
 from readOBJ import *
-from vertArea import *
+from vertexAreas import *
 from cotanLaplace import *
 from plotTriMesh import *
 
 V,F = readOBJ('./meshes/spot.obj')
-VA = vertArea(V, F)
+VA = vertexAreas(V, F)
 L = cotanLaplace(V,F)
 
 numEigs = 10
