@@ -5,8 +5,8 @@ This is a toolbox of python functions for geometry processing. This toolbox cont
 _import sys_ <br />
 _sys.path.append('/path/to/PyGPToolbox')_<br /><br />
 
-To import desired functions, simply add <br /><br />
-_from <functionName> import *_<br /><br />
+To import desired functions, simply add <br />
+_from _functionName_ import *_<br /><br />
 
 The dependencies of this toolbox are standard in python <br />
 - numpy<br />
