@@ -20,7 +20,10 @@ def readOBJ(filepath):
                 t_index_list = []
                 for t in line.replace("\n", "").split(" ")[1:]:
                     t_index = t.split("/")[0]
-                    t_index_list.append(int(t_index) - 1)
+                    try: 
+                        t_index_list.append(int(t_index) - 1)
+                    except ValueError:
+                        continue
                 F.append(t_index_list)
             else:
                 continue
