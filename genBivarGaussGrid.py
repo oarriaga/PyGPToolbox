@@ -4,8 +4,7 @@
 ## 	  plt.contourf(X, Y, Z)
 ## 	  plt.show()
 
-# import matplotlib.pyplot as plt
-from matplotlib import cm
+
 import numpy as np
 
 def genBivarGaussGrid(mu, cov, numSamples = 60):

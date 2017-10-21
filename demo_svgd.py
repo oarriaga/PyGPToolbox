@@ -9,6 +9,7 @@ import matplotlib.pyplot as plt
 
 from steinVGD import *
 from genBivarGaussGrid import *
+from matplotlib import cm
 
 
 class multivariateGaussian:
@@ -41,7 +42,6 @@ for ii in range(50):
 	plt.contourf(gx, gy, gz, cmap=cm.Blues)
 	plt.hold(True)
 	plt.scatter(x[:,0], x[:,1], c = 'k')
-	plt.axis('equal')
 	plt.pause(0.1)
 
 
