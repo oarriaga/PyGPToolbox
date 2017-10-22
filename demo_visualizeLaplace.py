@@ -1,7 +1,7 @@
 import scipy
 import scipy.sparse
 import scipy.sparse.linalg
-import time
+from mayavi import mlab
 
 from readOBJ import *
 from vertexAreas import *
@@ -15,7 +15,17 @@ L = cotanLaplace(V,F)
 numEigs = 10
 massMat = scipy.sparse.csr_matrix(np.diag(VA))
 # note that: computing which='SM' directly is too slow. We use "shift-invert" to compute
-vals, vecs = scipy.sparse.linalg.eigsh(L, M=massMat, k=numEigs, which='LM', sigma = 0)
+eVal, eVec = scipy.sparse.linalg.eigsh(L, M=massMat, k=numEigs, which='LM', sigma = 0)
 
-# print vals
-plotTriMesh(V,F, vertexColor = vecs[:,1]) 
+# make animation
+@mlab.show
+@mlab.animate(delay=600, ui=True)
+def anim():
+	ii = 1
+	while True:
+	    plotTriMesh(V,F, vertexColor = eVec[:,ii])
+	    ii += 1
+	    if ii == numEigs:
+	    	break
+	    yield
+anim()

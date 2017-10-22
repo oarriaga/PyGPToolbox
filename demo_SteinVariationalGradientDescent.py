@@ -30,13 +30,13 @@ cov = np.array([[0.5, 0.4], [0.3, 0.9]]) # covariance
 p = multivariateGaussian(mu, cov)
 
 # create initial particles x
-x = np.random.normal(0,0.5, [20, 2]);
+x = np.random.normal(0,0.5, [30, 2]);
 
 # visualize SVGD
 gx,gy,gz = genBivarGaussGrid(mu, cov)
 plt.figure()
 for ii in range(50):
-	x = steinVGD(x, p.dlogp_dx, numIter = 30)
+	x = steinVGD(x, p.dlogp_dx, numIter = 50)
 
 	plt.clf()
 	plt.contourf(gx, gy, gz, cmap=cm.Blues)
