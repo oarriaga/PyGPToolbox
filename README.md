@@ -21,6 +21,7 @@ Few scripts depend on other fantastic libraries. If you do not have these librar
 Demos: <br />
 Here we show few demos using the functions in this PyGPToolbox<br />
 - Laplace Eigenfunctions (demo_visualizeLaplace.py)<br />
+![Alt Text](https://github.com/htliu1992/PyGPToolbox/raw/master/figures/LaplaceModes.gif)
 ![alt text](https://github.com/htliu1992/PyGPToolbox/tree/master/figures/LaplaceModes.gif)
 
 - Wave Kernel Signatures (demo_kernelSignatures.py)<br />
