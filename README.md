@@ -19,9 +19,18 @@ Few scripts depend on other fantastic libraries. If you do not have these librar
 - PyAMG <br />
 
 Demos: <br />
-Here we show a few demos using the functions in this PyGPToolbox<br />
-1. Laplace Eigenfunctions
-![alt text](https://github.com/htliu1992/PyGPToolbox/tree/master/LaplaceModes.gif)
+Here we show few demos using the functions in this PyGPToolbox<br />
+- Laplace Eigenfunctions (demo_visualizeLaplace.py)
+![alt text](https://github.com/htliu1992/PyGPToolbox/tree/master/figures/LaplaceModes.gif)
+
+- Wave Kernel Signatures (demo_kernelSignatures.py)
+![alt text](https://github.com/htliu1992/PyGPToolbox/tree/master/figures/WKS.gif)
+
+- Mean Curvature Flow (demo_implicitMeanCurvatureFlow.py)
+![alt text](https://github.com/htliu1992/PyGPToolbox/tree/master/figures/implicitMCF.gif)
+
+- Stein Variational Gradient Descent (demo_demo_SteinVariationalGradientDescent.py)
+![alt text](https://github.com/htliu1992/PyGPToolbox/tree/master/figures/SVGD.gif)
 
 Contact us:<br />
 This toolbox is still in development by Hsueh-Ti Derek Liu and members of the Dynamic Graphics Project at University of Toronto. If you have any question or are intersted in contributing, please contact Hsueh-Ti Derek Liu (htliu1992@gmail.com).
