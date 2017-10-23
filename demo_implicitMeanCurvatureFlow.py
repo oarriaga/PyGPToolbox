@@ -7,8 +7,8 @@ from readOBJ import *
 from implicitMeanCurvatureFlow import *
 
 V,F = readOBJ('./meshes/fandisk.obj')
-numMCFIter = 40
-stepSize = 0.001 # step size needs to be sufficiently small
+numMCFIter = 60
+stepSize = 0.0005 # step size needs to be sufficiently small
 V_MCF = implicitMeanCurvatureFlow(V,F,stepSize,numMCFIter)
 
 # make animation

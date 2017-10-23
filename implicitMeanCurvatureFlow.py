@@ -12,6 +12,10 @@
 ##
 ## Notes:
 ## This MCF is not robust when surface have singularity
+## 
+## To Do: 
+## 1. volume preserving
+## 2. normalize laplacian
 
 import numpy as np
 import numpy.matlib as mat
