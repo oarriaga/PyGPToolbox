@@ -6,10 +6,9 @@ from mayavi import mlab
 from readOBJ import *
 from vertexAreas import *
 from cotanLaplace import *
-from plotTriMesh import *
 from animateVertexColor import *
 
-V,F = readOBJ('./meshes/spot.obj')
+V,F = readOBJ('./meshes/tr_reg_089.obj')
 VA = vertexAreas(V, F)
 L = cotanLaplace(V,F)
 

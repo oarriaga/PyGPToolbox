@@ -22,6 +22,9 @@ trainData = np.concatenate((X1, X2, X3), axis=0)
 # plt.axis('equal')
 # plt.show()
 
+## create gradient estimator
+model = gradLogDensityEstimator(trainData)
+
 ## create query points
 numX = 30
 numY = 24
@@ -30,8 +33,7 @@ Y = np.linspace(-6, 6, numY)
 X, Y = np.meshgrid(X, Y)
 pts = np.concatenate((X.reshape([numX*numY,1]), Y.reshape([numX*numY,1])), axis=1)
 
-## create gradient estimator
-model = gradLogDensityEstimator(trainData)
+## compute gradients for query points
 grad = model.gradEstimate(pts)
 
 ## plot estimation results

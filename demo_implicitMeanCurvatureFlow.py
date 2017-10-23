@@ -15,6 +15,7 @@ V_MCF = implicitMeanCurvatureFlow(V,F,stepSize,numMCFIter)
 @mlab.show
 @mlab.animate(delay=30, ui=True)
 def anim():
+	mlab.figure(bgcolor = (1,1,1))
 	color = (6.0/ 155.0, 41.0/ 155.0, 88.0/ 155.0) 
 	fig = mlab.triangular_mesh(V[:,0], V[:,1], V[:,2], F, color=color)
 	ii = 1

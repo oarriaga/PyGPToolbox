@@ -19,7 +19,6 @@ def heatKernelSignature(V,F, numEigs = 300, logtmax = 4, logtmin = -2, numTimeSt
 	L = cotanLaplace(V,F)
 
 	# solve eigenvalues and eigenvectors
-	numEigs = 300
 	eVal, eVec = scipy.sparse.linalg.eigsh(L, M=Mv, k=numEigs, which='LM', sigma = 0)
 	eVal = np.delete(eVal, 0) # remove the first eVal
 	eVec = np.delete(eVec, 0, axis = 1) # remove the first eVec

@@ -8,11 +8,20 @@ _sys.path.append('/path/to/PyGPToolbox')_<br /><br />
 To import desired functions, simply add <br /><br />
 _from [functionName] import *_<br /><br />
 
-Dependencies: <br />
+Main dependencies: <br />
 - numpy<br />
 - scipy<br />
 - mayavi<br />
-- matplotlib<br />
+- matplotlib<br /><br />
+
+Optional dependencies: <br />
+Few scripts depend on other fantastic libraries. If you do not have these libraries, you can still run most of the scripts. <br />
+- PyAMG <br />
+
+Demos: <br />
+Here we show a few demos using the functions in this PyGPToolbox<br />
+1. Laplace Eigenfunctions
+![alt text](https://github.com/htliu1992/PyGPToolbox/tree/master/LaplaceModes.gif)
 
 Contact us:<br />
 This toolbox is still in development by Hsueh-Ti Derek Liu and members of the Dynamic Graphics Project at University of Toronto. If you have any question or are intersted in contributing, please contact Hsueh-Ti Derek Liu (htliu1992@gmail.com).

@@ -15,11 +15,11 @@ class gradLogDensityEstimator:
 		if 'sigmaList' in kwargs: # Gaussian width parameter
 			sigmaList = kwargs['sigmaList']
 		else:
-			sigmaList = np.logspace(-1, 1, num=20)
+			sigmaList = np.logspace(-3, 3, num=50)
 		if 'lambdaList' in kwargs: # regularization parameter
 			lambdaList = kwargs['lambdaList']
 		else:
-			lambdaList = np.logspace(-2, 1, num=20)
+			lambdaList = np.logspace(-3, 1, num=30)
 		if 'numCrossValidation' in kwargs: # number of crossvalidation
 			numCrossValidation = kwargs['numCrossValidation']
 		else:
@@ -28,7 +28,7 @@ class gradLogDensityEstimator:
 			C = X[centerIdx, :]
 			numBasis = C.shape[0]
 		else:
-			numBasis = int(numSamples/3)
+			numBasis = int(numSamples/5)
 			centerIdx = numpy.random.randint(numSamples, size=numBasis) # gaussian center indices
 			C = X[centerIdx, :]
 

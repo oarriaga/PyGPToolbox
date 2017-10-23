@@ -35,13 +35,13 @@ x = np.random.normal(0,0.5, [30, 2]);
 # visualize SVGD
 gx,gy,gz = genBivarGaussGrid(mu, cov)
 plt.figure()
-for ii in range(50):
-	x = steinVGD(x, p.dlogp_dx, numIter = 50)
+for ii in range(70):
+	x = steinVGD(x, p.dlogp_dx, numIter = 20)
 
 	plt.clf()
 	plt.contourf(gx, gy, gz, cmap=cm.Blues)
 	plt.hold(True)
 	plt.scatter(x[:,0], x[:,1], c = 'k')
-	plt.pause(0.1)
+	plt.pause(0.01)
 
 

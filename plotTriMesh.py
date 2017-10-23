@@ -18,6 +18,7 @@ def plotTriMesh(V,F,**kwargs):
 		opacity = 1.0
 
 	# color 
+	mlab.figure(bgcolor = (1,1,1))
 	if 'vertexColor' in kwargs:
 		color = kwargs['vertexColor']
 		mesh = mlab.pipeline.triangular_mesh_source(V[:,0],V[:,1],V[:,2],F)
