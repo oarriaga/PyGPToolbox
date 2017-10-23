@@ -21,17 +21,17 @@ Few scripts depend on other fantastic libraries. If you do not have these librar
 Demos: <br />
 Here we show few demos using the functions in this PyGPToolbox<br />
 - Laplace Eigenfunctions (demo_visualizeLaplace.py)<br />
-![Alt Text](https://github.com/htliu1992/PyGPToolbox/raw/master/figures/LaplaceModes.gif)
-<img src="https://github.com/htliu1992/PyGPToolbox/raw/master/figures/LaplaceModes.gif" width = "100"/>
+<img src="https://github.com/htliu1992/PyGPToolbox/raw/master/figures/LaplaceModes.gif" width = "200"/>
 
 - Wave Kernel Signatures (demo_kernelSignatures.py)<br />
-![Alt Text](https://github.com/htliu1992/PyGPToolbox/raw/master/figures/WKS.gif | width=100)
+<img src="https://github.com/htliu1992/PyGPToolbox/raw/master/figures/WKS.gif" width = "300"/>
 
 - Mean Curvature Flow (demo_implicitMeanCurvatureFlow.py)<br />
-![Alt Text](https://github.com/htliu1992/PyGPToolbox/raw/master/figures/implicitMCF.gif | width=100)
+<img src="https://github.com/htliu1992/PyGPToolbox/raw/master/figures/implicitMCF.gif" width = "400"/>
 
 - Stein Variational Gradient Descent (demo_demo_SteinVariationalGradientDescent.py)<br />
-![Alt Text](https://github.com/htliu1992/PyGPToolbox/raw/master/figures/SVGD.gif | width=100)
+<img src="https://github.com/htliu1992/PyGPToolbox/raw/master/figures/SVGD.gif" width = "400"/>
+
 
 Contact us:<br />
 This toolbox is still in development by Hsueh-Ti Derek Liu and members of the Dynamic Graphics Project at University of Toronto. If you have any question or are intersted in contributing, please contact Hsueh-Ti Derek Liu (htliu1992@gmail.com).
