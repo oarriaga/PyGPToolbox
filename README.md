@@ -16,7 +16,7 @@ _from [functionName] import *_<br /><br />
 
 ## Optional dependencies: <br />
 Few scripts depend on other fantastic libraries. If you do not have these libraries, you can still run most of the scripts. <br />
-- PyAMG <br />
+- PyAMG <br /><br />
 
 ## Demos: <br />
 Here we show few demos using the functions in this PyGPToolbox<br />
@@ -31,6 +31,6 @@ Here we show few demos using the functions in this PyGPToolbox<br />
 
 - Stein Variational Gradient Descent (demo_demo_SteinVariationalGradientDescent.py)<br />
 <img src="https://github.com/htliu1992/PyGPToolbox/raw/master/figures/SVGD.gif" width = "400"/>
-
+<br />
 ## Contact us:<br />
 This toolbox is still in development by Hsueh-Ti Derek Liu and members of the Dynamic Graphics Project at University of Toronto. If you have any question or are intersted in contributing, please contact Hsueh-Ti Derek Liu (htliu1992@gmail.com).
