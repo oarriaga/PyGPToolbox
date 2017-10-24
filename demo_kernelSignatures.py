@@ -9,6 +9,7 @@ from readOBJ import *
 from heatKernelSignature import *
 from waveKernelSignature import *
 from animateVertexColor import *
+from waveKernelMap import *
 
 # load data
 V,F = readOBJ('./meshes/spot.obj')
@@ -18,7 +19,13 @@ V,F = readOBJ('./meshes/spot.obj')
 # delayTime = 70
 # animateVertexColor(V,F,HKS[:,:60], delayTime)
 
-## 2. waveKernelSignatures(V,F,numEigs, numTimeSteps)
+## 2. waveKernelSignature(V,F,numEigs, numTimeSteps)
 WKS = waveKernelSignature(V,F, 300, 200)
 delayTime = 35
 animateVertexColor(V,F,WKS, delayTime)
+
+## 3. waveKernelMap(V,F,numEigs, numTimeSteps)
+# landmarks = np.random.randint(V.shape[0], size=10)
+# WKS = waveKernelMap(V,F, landmarks, 300, 200)
+# delayTime = 35
+# animateVertexColor(V,F,WKS, delayTime)
