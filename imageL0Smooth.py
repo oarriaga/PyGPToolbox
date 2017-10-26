@@ -3,17 +3,12 @@
 ## 2. https://github.com/t-suzuki/l0_gradient_minimization_test
 
 import numpy as np
-import scipy
-import scipy.misc
 from scipy.fftpack import fft2, ifft2
 import matplotlib.pyplot as plt
 
-def imageL0Smooth(fileName, imgSize = 256, lmd = 0.05):
+def imageL0Smooth(I, lmd = 0.05):
 	# I: original image
 	# S: output image
-	I = scipy.misc.imread(fileName) # load image
-	I = scipy.misc.imresize(I, (imgSize, imgSize)) # resize
-	I = I / 255.0 # switch [0 255] to [0 1]
 
 	betaMax = 1e5
 	beta = 0.1
