@@ -4,9 +4,9 @@ PyGPToolbox - A python geometry processing toolbox
 This is a toolbox of python functions for geometry processing. This toolbox contains only straight python scripts (.py) and only depends on standard python libraries. <br /><br />
 
 ## Installation 
-Simply adding the PyGPToolbox directory to your include path and importing desired functions. For example,<br /><br />
+Simply adding the "PyGPToolbox/src" directory to your include path and importing desired functions. For example,<br /><br />
 _import sys_ <br />
-_sys.path.append('/path/to/PyGPToolbox')_<br />
+_sys.path.append('/path/to/PyGPToolbox/src')_<br />
 _from [functionName] import *_<br /><br />
 
 ## Main dependencies: <br />
@@ -20,6 +20,9 @@ Few scripts depend on other fantastic libraries. If you do not have these librar
 - PyAMG <br /><br />
 
 ## Demos: <br />
+To run the demo code, simply go to the "PyGPToolbox/src" folde and run the demo. For example: <br />
+_cd /path/to/PyGPToolbox/src_<br />
+_python [demo_functionName]_<br />
 Here we show few demos using the functions in this PyGPToolbox<br />
 - Laplace Eigenfunctions (demo_visualizeLaplace.py)<br />
 <img src="https://github.com/htliu1992/PyGPToolbox/raw/master/figures/LaplaceModes.gif" width = "200"/>

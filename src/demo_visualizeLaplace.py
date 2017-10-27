@@ -8,7 +8,7 @@ from vertexAreas import *
 from cotanLaplace import *
 from animateVertexColor import *
 
-V,F = readOBJ('./meshes/tr_reg_089.obj')
+V,F = readOBJ('../meshes/tr_reg_089.obj')
 VA = vertexAreas(V, F)
 L = cotanLaplace(V,F)
 

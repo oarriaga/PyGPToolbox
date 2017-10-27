@@ -12,7 +12,7 @@ from animateVertexColor import *
 from waveKernelMap import *
 
 # load data
-V,F = readOBJ('./meshes/spot.obj')
+V,F = readOBJ('../meshes/spot.obj')
 
 ## 1. heatKernelSignature(V,F,numEigs,logtmax,logtmin,numTimeSteps)
 # HKS = heatKernelSignature(V,F, 300, 4, -2, 100)

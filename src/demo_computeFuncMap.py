@@ -10,8 +10,8 @@ import scipy.sparse
 import scipy.sparse.linalg
 import matplotlib.pyplot as plt 
 
-V1,F1 = readOBJ('./meshes/tr_reg_089.obj')
-V2,F2 = readOBJ('./meshes/tr_reg_090.obj')
+V1,F1 = readOBJ('../meshes/tr_reg_089.obj')
+V2,F2 = readOBJ('../meshes/tr_reg_090.obj')
 
 # compute laplace eigenbases
 numEigs = 100

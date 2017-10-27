@@ -6,7 +6,7 @@ import scipy
 import scipy.misc
 from imageL0Smooth import *
 
-fileName = './images/lenna.png'
+fileName = '../images/lenna.png'
 imgSize = 256
 lambdaValue = 0.05
 
