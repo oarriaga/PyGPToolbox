@@ -22,7 +22,7 @@ Few scripts depend on other fantastic libraries. If you do not have these librar
 ## Demos: <br />
 To run the demo code, simply go to the "PyGPToolbox/src" folder and run the demo. For example: <br />
 _cd /path/to/PyGPToolbox/src_<br />
-_python [demo_functionName]_<br />
+_python [demo_functionName]_<br /><br />
 Here we show few demos using the functions in this PyGPToolbox<br />
 - Laplace Eigenfunctions (demo_visualizeLaplace.py)<br />
 <img src="https://github.com/htliu1992/PyGPToolbox/raw/master/figures/LaplaceModes.gif" width = "200"/>
