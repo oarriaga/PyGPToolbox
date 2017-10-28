@@ -8,4 +8,4 @@ from geodesicsInHeat import *
 V,F = readOBJ("../meshes/spot.obj")
 centerIdx = 10
 D = geodesicsInHeat(V,F,centerIdx)
-plotTriMesh(V,F,vertexColor=D)
+plotTriMesh(V,F, vertexColor=D, colormap="OrRd")
