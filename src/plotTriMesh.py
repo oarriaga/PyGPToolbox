@@ -16,6 +16,11 @@ def plotTriMesh(V,F,**kwargs):
 		opacity = kwargs['opacity']
 	else:
 		opacity = 1.0
+	# colormap
+	if 'colormap' in kwargs:
+		colormap = kwargs['colormap']
+	else:
+		colormap = "Blues"
 
 	# color 
 	mlab.figure(bgcolor = (1,1,1))
@@ -27,7 +32,7 @@ def plotTriMesh(V,F,**kwargs):
 		point_data.scalars.name = 'Point data'
 		mesh.mlab_source.update()
 		mesh2 = mlab.pipeline.set_active_attribute(mesh, point_scalars='Point data')
-		mlab.pipeline.surface(mesh2,opacity = opacity)
+		mlab.pipeline.surface(mesh2,opacity = opacity, colormap=colormap)
 	elif 'faceColor' in kwargs:
 		color = kwargs['faceColor']
 		mesh = mlab.pipeline.triangular_mesh_source(V[:,0],V[:,1],V[:,2],F)
@@ -36,7 +41,7 @@ def plotTriMesh(V,F,**kwargs):
 		cell_data.scalars.name = 'Cell data'
 		mesh.mlab_source.update()
 		mesh2 = mlab.pipeline.set_active_attribute(mesh, cell_scalars='Cell data')
-		mlab.pipeline.surface(mesh2, opacity = opacity)
+		mlab.pipeline.surface(mesh2, opacity = opacity, colormap=colormap)
 	else:
 		color = (6.0/ 155.0, 41.0/ 155.0, 88.0/ 155.0) 
 		mlab.triangular_mesh(V[:,0], V[:,1], V[:,2], F, color=color, opacity = opacity)

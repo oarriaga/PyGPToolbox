@@ -19,4 +19,4 @@ eVal, eVec = scipy.sparse.linalg.eigsh(L, M=massMat, k=numEigs, which='LM', sigm
 
 # plot eigenvector
 delayTime = 500
-animateVertexColor(V,F,eVec[:,1:], delayTime)
+animateVertexColor(V,F,eVec[:,1:], delayTime, colormap="RdBu")

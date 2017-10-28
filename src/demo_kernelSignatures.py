@@ -17,7 +17,7 @@ V,F = readOBJ('../meshes/spot.obj')
 ## 1. heatKernelSignature(V,F,numEigs,logtmax,logtmin,numTimeSteps)
 # HKS = heatKernelSignature(V,F, 300, 4, -2, 100)
 # delayTime = 70
-# animateVertexColor(V,F,HKS[:,:60], delayTime)
+# animateVertexColor(V,F,HKS[:,:60], delayTime, colormap = "OrRd")
 
 ## 2. waveKernelSignature(V,F,numEigs, numTimeSteps)
 WKS = waveKernelSignature(V,F, 300, 200)
