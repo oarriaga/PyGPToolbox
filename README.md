@@ -24,16 +24,13 @@ To run the demo code, simply go to the "PyGPToolbox/src" folder and run the demo
 _cd /path/to/PyGPToolbox/src_<br />
 _python [demo_functionName]_<br /><br />
 Here we show few demos using the functions in this PyGPToolbox<br />
-- Laplace Eigenfunctions (demo_visualizeLaplace.py)<br />
-<img src="https://github.com/htliu1992/PyGPToolbox/raw/master/figures/LaplaceModes.gif" width = "200"/>
-
-- Wave Kernel Signatures (left), Heat Kernel Signatures (right) (demo_kernelSignatures.py)<br />
+- Wave Kernel Signatures [Aubry 11], Heat Kernel Signatures [Sun 09] (demo_kernelSignatures.py)<br />
 <img src="https://github.com/htliu1992/PyGPToolbox/raw/master/figures/WKS.gif" width = "300"/><img src="https://github.com/htliu1992/PyGPToolbox/raw/master/figures/HKS.gif" width = "300"/>
 
-- Implicit Mean Curvature Flow (left), Conformal Mean Curvature Flow (right) (demo_implicitMeanCurvatureFlow.py)<br />
+- Implicit Mean Curvature Flow [Desbrun 99], Conformal Mean Curvature Flow [Kazhdan 12] (demo_implicitMeanCurvatureFlow.py)<br />
 <img src="https://github.com/htliu1992/PyGPToolbox/raw/master/figures/implicitMCF.gif" width = "400"/><img src="https://github.com/htliu1992/PyGPToolbox/raw/master/figures/conformalMCF.gif" width = "250"/>
 
-- Stein Variational Gradient Descent (demo_SteinVariationalGradientDescent.py)<br />
+- Stein Variational Gradient Descent [Liu 16] (demo_SteinVariationalGradientDescent.py)<br />
 <img src="https://github.com/htliu1992/PyGPToolbox/raw/master/figures/SVGD.gif" width = "400"/>
 
 ## Contact us:<br />
