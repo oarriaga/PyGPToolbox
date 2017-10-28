@@ -27,11 +27,11 @@ Here we show few demos using the functions in this PyGPToolbox<br />
 - Laplace Eigenfunctions (demo_visualizeLaplace.py)<br />
 <img src="https://github.com/htliu1992/PyGPToolbox/raw/master/figures/LaplaceModes.gif" width = "200"/>
 
-- Wave Kernel Signatures (demo_kernelSignatures.py)<br />
-<img src="https://github.com/htliu1992/PyGPToolbox/raw/master/figures/WKS.gif" width = "300"/>
+- Wave Kernel Signatures (left), Heat Kernel Signatures (right) (demo_kernelSignatures.py)<br />
+<img src="https://github.com/htliu1992/PyGPToolbox/raw/master/figures/WKS.gif" width = "300"/><img src="https://github.com/htliu1992/PyGPToolbox/raw/master/figures/HKS.gif" width = "300"/>
 
-- Mean Curvature Flow (demo_implicitMeanCurvatureFlow.py)<br />
-<img src="https://github.com/htliu1992/PyGPToolbox/raw/master/figures/implicitMCF.gif" width = "400"/>
+- Implicit Mean Curvature Flow (left), Conformal Mean Curvature Flow (right) (demo_implicitMeanCurvatureFlow.py)<br />
+<img src="https://github.com/htliu1992/PyGPToolbox/raw/master/figures/implicitMCF.gif" width = "400"/><img src="https://github.com/htliu1992/PyGPToolbox/raw/master/figures/conformalMCF.gif" width = "250"/>
 
 - Stein Variational Gradient Descent (demo_SteinVariationalGradientDescent.py)<br />
 <img src="https://github.com/htliu1992/PyGPToolbox/raw/master/figures/SVGD.gif" width = "400"/>
