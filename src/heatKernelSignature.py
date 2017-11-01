@@ -24,9 +24,6 @@ def heatKernelSignature(V,F, numEigs = 300, logtmax = 4, logtmin = -2, numTimeSt
 	eVec = np.delete(eVec, 0, axis = 1) # remove the first eVec
 
 	# create time step
-	logtmax = 4
-	logtmin = -2
-	numTimeSteps = 100
 	timeSteps = np.logspace(logtmin, logtmax, num=numTimeSteps)
 
 	# compute heat kernel signature
