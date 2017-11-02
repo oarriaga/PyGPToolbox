@@ -1,10 +1,9 @@
 from readOBJ import *
 from meanCurvature import *
-from plotTriMesh import *
+# from plotTriMesh import *
 from gaussianCurvature import *
-from edgeOperator import *
+from dihedralAngleMat import *
 
-V,F = readOBJ('../meshes/spot.obj')
-De, p1234 = edgeOperator(V,F)
-print De
-print p1234
+V,F = readOBJ('../meshes/fandisk.obj')
+A = dihedralAngleMat(V,F)
+print A
