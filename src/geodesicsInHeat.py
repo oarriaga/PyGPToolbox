@@ -37,6 +37,6 @@ def geodesicsInHeat(V,F, centerIdx, m = 1.0):
 	phi = np.linalg.solve(L.todense(), divX)
 
 	phi = -(phi-phi[centerIdx])
-	return phi
+	return np.squeeze(np.asarray(phi))
 
 
