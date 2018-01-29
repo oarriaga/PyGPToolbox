@@ -12,8 +12,10 @@ _from [functionName] import *_<br /><br />
 ## Main dependencies: <br />
 - numpy<br />
 - scipy<br />
+- libigl (python)<br />
 - mayavi<br />
 - matplotlib<br /><br />
+
 
 ## Optional dependencies: <br />
 Few scripts depend on other fantastic libraries. If you do not have these libraries, you can still run most of the scripts. <br />
