@@ -21,4 +21,6 @@ def triMesh(V,F,c = np.array([0]), colormap = "default"):
 	viewer.data.set_mesh(p2e(V.astype(np.float64)), p2e(F.astype(np.int32)))
 	viewer.core.show_lines = False
 	viewer.data.set_colors(color)
+	backColor = p2e(np.array([1,1,1,1]).astype(np.float64))
+	viewer.core.background_color = backColor
 	viewer.launch()

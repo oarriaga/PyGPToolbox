@@ -1,7 +1,7 @@
 import numpy as np
 from scatter3 import *
 
-def colorMap(x, colormap = "default"):
+def colorMap(val, colormap = "default"):
 	if colormap == "blue":
 		baseColor = np.array([[247,251,255],
 			[222,235,247],[198,219,239],
@@ -26,7 +26,7 @@ def colorMap(x, colormap = "default"):
 			[254,224,144],[255,255,191],
 			[224,243,248],[171,217,233],
 			[116,173,209],[69,117,180]])
-
+	x = np.copy(val)
 	x -= x.min()
 	x /= (x.max()+1e-16)
 

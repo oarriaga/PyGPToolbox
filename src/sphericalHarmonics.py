@@ -7,7 +7,6 @@ import scipy.special
 def sphericalHarmonics(m,l,thetaGrid,phiGrid):
 	P = scipy.special.lpmv(abs(m),l,np.cos(phiGrid))
 	K = -1**m * np.sqrt( (2*l+1)*scipy.special.factorial(l-abs(m)) / (4*np.pi*scipy.special.factorial(l+abs(m))) )
-
 	if m > 0:
 		Y = K * np.sqrt(2) * P * np.cos(abs(m) * thetaGrid)
 	elif m < 0:
