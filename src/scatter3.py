@@ -12,11 +12,14 @@ def scatter3(p, c = np.array([0]), size = 3, colormap = "default"):
 	elif ((c.shape[0] == p.shape[0]) and colormap == "jet"):
 		color = igl.eigen.MatrixXd()
 		igl.jet(p2e(c.astype(np.float64)), True, color)
+	elif c.shape == p.shape:
+		color = p2e(c.astype(np.float64))
 	else:
+		from colorMap import *
 		# colormap: "blue", "red", "green", "default"
 		color = colorMap(c, colormap = colormap)
 		color = p2e(color.astype(np.float64))
-	print color
+
 	backColor = p2e(np.array([1,1,1,1]).astype(np.float64))
 	viewer = igl.viewer.Viewer()
 	viewer.data.set_points(p2e(p.astype(np.float64)), color)

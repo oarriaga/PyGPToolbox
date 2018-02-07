@@ -12,6 +12,8 @@ def triMesh(V,F,c = np.array([0]), colormap = "default"):
 	elif ((c.shape[0] == V.shape[0]) and colormap == "jet"):
 		color = igl.eigen.MatrixXd()
 		igl.jet(p2e(c.astype(np.float64)), True, color)
+	elif c.shape == V.shape:
+		color = p2e(c.astype(np.float64))
 	else:
 		# colormap: "blue", "red", "green", "default"
 		color = colorMap(c, colormap = colormap)

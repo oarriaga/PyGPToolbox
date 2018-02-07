@@ -9,8 +9,8 @@ m = 1 # degree
 l = 2 # level
 
 V,F = readOBJ('../meshes/unitSphere.obj')
-theta, phi, r = car2sph(V)
-Y = sphericalHarmonics(m,l,theta,phi)
+phi, theta, r = car2sph(V)
+Y = sphericalHarmonics(m,l,phi,theta)
 
 # check the solution with analytical real SH
 print "=============="
@@ -22,7 +22,7 @@ print (np.sqrt(15/np.pi) / 2 * (V[:,2]*V[:,0]))[10:20]
 # check orthogonality
 print "=============="
 print "dot product between different SH (should be 0)"
-print np.sum(Y * sphericalHarmonics(2,3,theta,phi))
+print np.sum(Y * sphericalHarmonics(2,3,phi,theta))
 
 # check orthonormal
 print "=============="
@@ -32,7 +32,6 @@ print np.sum(Y * VA * Y)
 # above computation is equavalent to below
 # M = np.diag(VA)
 # print Y[None,:].dot(M).dot(Y[:,None])[0,0]
-
 
 triMesh(V,F,Y, colormap = "default")
 

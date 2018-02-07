@@ -15,6 +15,7 @@ def readOBJ(filepath):
                 continue
             elif line.strip().startswith("v"):
                 vertices = line.replace("\n", "").split(" ")[1:]
+                vertices = np.delete(vertices,np.argwhere(vertices == np.array([''])).flatten())
                 V.append(map(float, vertices))
             elif line.strip().startswith("f"):
                 t_index_list = []
