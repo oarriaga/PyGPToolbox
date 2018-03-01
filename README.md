@@ -1,7 +1,7 @@
 # PyGPToolbox
 PyGPToolbox - A python geometry processing toolbox
 
-This is a toolbox of python functions for geometry processing. This toolbox contains only straight python scripts (.py) and only depends on standard python libraries. <br /><br />
+This is a toolbox of python functions for geometry processing. This toolbox contains only straight python scripts (.py) and only depends on standard python libraries. As the scripts were written for research purposes only, they have not been tested, documented, optimized to the degree that would be advisable in any important application. All use of these programs is entirely at the user's own risk.<br /><br />
 
 ## Installation 
 Simply adding the "PyGPToolbox/src" directory to your include path and importing desired functions. For example,<br /><br />

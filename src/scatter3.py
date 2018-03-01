@@ -20,6 +20,7 @@ def scatter3(p, c = np.array([0]), size = 3, colormap = "default"):
 		color = colorMap(c, colormap = colormap)
 		color = p2e(color.astype(np.float64))
 
+	p = np.ascontiguousarray(p, dtype=np.float64)
 	backColor = p2e(np.array([1,1,1,1]).astype(np.float64))
 	viewer = igl.viewer.Viewer()
 	viewer.data.set_points(p2e(p.astype(np.float64)), color)
