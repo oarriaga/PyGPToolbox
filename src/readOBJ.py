@@ -1,6 +1,6 @@
 import numpy as np
 
-def readOBJ(filepath, returnVC = False):
+def readOBJ(filepath, returnColor = False):
     V = []
     F = []
     VC = []
@@ -42,7 +42,7 @@ def readOBJ(filepath, returnVC = False):
     V = np.asarray(V)
     F = np.asarray(F)
     VC = np.asarray(VC)
-    if returnVC is True:
+    if returnColor is True:
         return V, F, VC
     else:
         return V, F
