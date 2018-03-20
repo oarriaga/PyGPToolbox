@@ -13,5 +13,5 @@ def faceNormals(V, F):
 	vec2 = V[F[:,2],:] - V[F[:,0],:]
 	FN = np.cross(vec1, vec2) / 2
 	l2Norm = np.sqrt((FN * FN).sum(axis=1))
-	FN_normalized = FN / l2Norm.reshape(FN.shape[0],1)
+	FN_normalized = FN / (l2Norm.reshape(FN.shape[0],1) + 1e-10)
 	return FN_normalized
